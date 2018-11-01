@@ -23,7 +23,7 @@ In Sequence:
 * `oc get svc -o name` (_to list down the available services_)
 * `oc expose svc/calculator`
 
-
+*Wala~~~~*
 
 ## To delete everything
 ``` 
