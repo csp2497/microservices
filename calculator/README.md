@@ -1,7 +1,9 @@
-Calculator Demo For Microservices
+#Calculator Demo For Microservices
 
+## Reference URL
 https://access.redhat.com/documentation/en-us/red_hat_jboss_middleware_for_openshift/3/html-single/red_hat_java_s2i_for_openshift/index
 
+## Steps TO Deploy Using S2i
 1. cd to source folder
 2. mvn clean package
 3. cmkdur -p ./ocp/deployments
