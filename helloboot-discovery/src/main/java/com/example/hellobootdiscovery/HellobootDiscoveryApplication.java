@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@RibbonClient(name = "simplecalcuator", configuration = SimpleCalculatorRibbonConfiguration.class)
+@RibbonClient(name = "calculator", configuration = CalculatorRibbonConfiguration.class)
 public class HellobootDiscoveryApplication {
 
 	public static void main(String[] args) {

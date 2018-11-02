@@ -17,7 +17,7 @@ public class CalculatorController {
 
     @GetMapping("/randomadd")
     public String randomAdd() {
-        log.info("Calling Calculator Service: simplecalculator");
+        log.info("Calling Calculator Service: calcculator");
         Random random = new Random();
         return calculatorService.add(random.nextInt(),random.nextInt());
     }

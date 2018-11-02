@@ -8,7 +8,7 @@ import com.netflix.loadbalancer.PingUrl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 
-public class SimpleCalculatorRibbonConfiguration {
+public class CalculatorRibbonConfiguration {
 
 	@Autowired
 	IClientConfig ribbonClientConfig;

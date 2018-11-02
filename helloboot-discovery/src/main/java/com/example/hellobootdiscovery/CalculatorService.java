@@ -1,13 +1,16 @@
 package com.example.hellobootdiscovery;
 
-import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+
+import lombok.extern.slf4j.Slf4j;
 
 @Service
 @Slf4j
 public class CalculatorService {
 
+	@Autowired
 	private RestTemplate restTemplate;
 
 	public CalculatorService(RestTemplate restTemplate) {
@@ -15,7 +18,7 @@ public class CalculatorService {
 	}
 
 	public String add(int n1, int n2) {
-		String response = restTemplate.getForObject("http://simplecalculator/add/{n1}/{n2}", String.class, n1, n2);
+		String response = restTemplate.getForObject("http://calculator/add/{n1}/{n2}", String.class, n1, n2);
 		log.info("Response:{}", response);
 		return response;
 	}

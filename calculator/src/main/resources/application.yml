@@ -1,3 +1,8 @@
-#server :
-# port : 8080
-# 
+spring:
+  application:
+    name: calculator
+  cloud:
+    kubernetes:
+      reload:
+        enabled: true
+    
