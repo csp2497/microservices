@@ -1,6 +1,8 @@
 spring:
   application:
     name: helloboot-discovery
+server:
+  port: 8080
 calculator:
   ribbon:
     eureka:

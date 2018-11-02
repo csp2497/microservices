@@ -11,14 +11,14 @@ import lombok.extern.slf4j.Slf4j;
 public class CalculatorService {
 
 	@Autowired
-	private RestTemplate restTemplate;
+	RestTemplate restTemplate;
 
 	public CalculatorService(RestTemplate restTemplate) {
 		this.restTemplate = restTemplate;
 	}
 
 	public String add(int n1, int n2) {
-		String response = restTemplate.getForObject("http://calculator/add/{n1}/{n2}", String.class, n1, n2);
+		String response = restTemplate.getForObject("http://calculator:8080/add/{n1}/{n2}", String.class, n1, n2);
 		log.info("Response:{}", response);
 		return response;
 	}

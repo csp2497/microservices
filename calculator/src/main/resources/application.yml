@@ -1,8 +1,5 @@
 spring:
   application:
     name: calculator
-  cloud:
-    kubernetes:
-      reload:
-        enabled: true
-    
+server:
+  port: 8080

@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@EnableDiscoveryClient
-@RibbonClient(name = "calculator", configuration = CalculatorRibbonConfiguration.class)
+//@EnableDiscoveryClient
+//@RibbonClient(name = "calculator", configuration = CalculatorRibbonConfiguration.class)
 public class HellobootDiscoveryApplication {
 
 	public static void main(String[] args) {
@@ -21,8 +21,8 @@ public class HellobootDiscoveryApplication {
 	@Configuration
 	public class MyConfig {
 
+//		@LoadBalanced
 		@Bean
-		@LoadBalanced
 		public RestTemplate restTemplate() {
 			return new RestTemplate();
 		}

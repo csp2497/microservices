@@ -14,6 +14,10 @@ After importing the image stream, you can use `oc get imagestream` or `oc get is
 ### When using Openshift, you must assign the view role to the default service account in the current project:
 ```
 oc policy add-role-to-user view --serviceaccount=default
+
+oc policy add-role-to-user view -z default
+
+oc policy add-role-to-user cluster-reader system:serviceaccount:myproject:default
 ```
 
 ## Steps TO Deploy Using S2i
@@ -34,3 +38,7 @@ In Sequence:
 ``` 
 oc delete all --selector app=calculator
 ```
+
+
+## For Studies
+1. <https://github.com/RHsyseng/spring-boot-msa-ocp>
