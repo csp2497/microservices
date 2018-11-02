@@ -11,6 +11,11 @@ Refer to the [link](https://developers.redhat.com/blog/2017/02/23/getting-starte
 
 After importing the image stream, you can use `oc get imagestream` or `oc get is -n openshift` to view the list of image stream available
 
+### When using Openshift, you must assign the view role to the default service account in the current project:
+```
+oc policy add-role-to-user view --serviceaccount=default
+```
+
 ## Steps TO Deploy Using S2i
 In Sequence:
 * `cd to source folder`
