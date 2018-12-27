@@ -30,7 +30,7 @@ In Sequence:
 * `oc start-build calculator --from-dir=.\ocp --follow`
 * `oc new-app calculator`
 * `oc get svc -o name` (_to list down the available services_)
-* `oc expose svc/calculator`
+* `oc expose svc/calculator` alternavtively, specify hostname `oc expose svc/calculator --hostname=calculate.openshift.local.com`
 
 *Wala DONE~~~~*
 
